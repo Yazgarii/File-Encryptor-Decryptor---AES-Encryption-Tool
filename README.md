@@ -1,58 +1,58 @@
 
 # File Encryptor & Decryptor - AES Encryption Tool
 
-Bu Python tabanlı araç, dosyalarınızı **AES (Advanced Encryption Standard)** şifreleme algoritması ile şifrelemenizi ve şifresini çözmenizi sağlar. Kullanıcılar, dosyalarını seçip güvenli bir şekilde şifreleyebilir ve yalnızca doğru şifre ile çözülebilir hale getirebilir.
+This Python-based tool allows you to encrypt and decrypt your files with the **AES (Advanced Encryption Standard)** encryption algorithm. Users can select and securely encrypt their files, making them decryptable only with the correct password.
 
-## Özellikler
-- Dosya şifreleme ve şifre çözme
-- AES şifreleme algoritması kullanarak yüksek güvenlik
-- Şifreli dosyaların otomatik olarak `.enc` uzantısı ile kaydedilmesi
-- Kolay kullanım için basit komut satırı arayüzü
+## Features
+- File encryption and decryption
+- High security using AES encryption algorithm
+- Automatic saving of encrypted files with `.enc` extension
+- Simple command line interface for easy operation
 
-## Kullanım
+## Usage
 
-### Gereksinimler
+#### Requirements
 - Python 3.x
-- PyCryptodome kütüphanesi
+- PyCryptodome library
 
-### Adım 1: Gereksinimleri Yükleyin
-Bu projeyi kullanabilmek için `PyCryptodome` kütüphanesini yüklemeniz gerekmektedir. Bunu aşağıdaki komut ile yükleyebilirsiniz:
+### Step 1: Install Requirements
+To use this project you need to install the `PyCryptodome` library. You can install it with the following command:
 
 ```bash
 pip install pycryptodome
 ```
 
-### Adım 2: Dosya Şifreleme
-Dosyanızı şifrelemek için, şifrelemek istediğiniz dosyanın adı ve bir şifre girmeniz gerekecek. Aşağıdaki komutları izleyerek şifreleme işlemi yapabilirsiniz:
+### Step 2: File Encryption
+To encrypt your file, you will need to enter the name of the file you want to encrypt and a password. You can encrypt your file by following the commands below:
 
-1. `encrypt_file` fonksiyonu ile dosyanızı şifreleyin.
-2. Şifreli dosya `.enc` uzantısı ile kaydedilecektir.
-
-```bash
-python encrypt_decrypt.py
-```
-
-### Adım 3: Dosya Şifre Çözme
-Şifreli dosyayı çözmek için doğru şifreyi girmeniz yeterli olacak. Şifreli dosyanın adı `.enc` uzantılı olacaktır.
+1. Encrypt your file with the `encrypt_file` function.
+2. The encrypted file will be saved with `.enc` extension.
 
 ```bash
 python encrypt_decrypt.py
 ```
 
-### Adım 4: Çıktılar
-- Şifreli dosya: `filename.enc`
-- Çözülen dosya: `decrypted_filename`
+### Step 3: File Decryption
+To decrypt the encrypted file, simply enter the correct password. The name of the encrypted file will have the extension `.enc`.
 
-## Kullandığınız Şifreleme Algoritması
+```bash
+python encrypt_decrypt.py
+```
 
-Bu araç, dosyaları **AES (Advanced Encryption Standard)** şifreleme algoritması kullanarak şifreler. AES, güvenliği ve hızını kanıtlamış bir simetrik anahtar şifreleme algoritmasıdır.
+### Step 4: Outputs
+- Encrypted file: `filename.enc`
+- Decrypted file: `decrypted_filename`
 
-## Katkıda Bulunma
+## Encryption Algorithm You Use
 
-Eğer bu projeye katkıda bulunmak isterseniz, lütfen aşağıdaki adımları takip edin:
-1. Bu projeyi forklayın.
-2. Yeni bir özellik ekleyin veya hatayı düzeltin.
-3. Pull request oluşturun.
+This tool encrypts files using the **AES (Advanced Encryption Standard)** encryption algorithm. AES is a symmetric key encryption algorithm with proven security and speed.
 
-## Lisans
-Bu proje **MIT Lisansı** ile lisanslanmıştır. Detaylar için [LICENSE](LICENSE) dosyasına bakın.
+## Contributing
+
+If you would like to contribute to this project, please follow the steps below:
+1. Fork this project.
+2. Add a new feature or fix a bug.
+3. Create pull request.
+
+## License
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
